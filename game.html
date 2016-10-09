@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- BOOTSTRAP (style only)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Number Game</title>
+    <script type="text/javascript" src="numbergame.js"></script>
+  </head>
+  <body lang="en-US">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 page-header">
+          <h1>Number Guessing Game</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-default" type="button" onclick="startNewGame();">
+            New Game
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Number">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button" id="num">
+                Guess
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="col-xs-8">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Results</div>
+            <div class="panel-body">
+              <p id="output-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
